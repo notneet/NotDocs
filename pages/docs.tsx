@@ -63,7 +63,7 @@ const Docs: NextPage<Props> = ({ allPosts }) => {
                   >
                     {" "}
                     <Link as={`/docs/${post.slug}`} href="/docs/[slug]">
-                      /{post.slug}
+                      {post.slug}
                     </Link>
                   </li>
                 ))}
