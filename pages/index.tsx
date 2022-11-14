@@ -68,6 +68,11 @@ export default function Home() {
                 description="Read the docs"
               />
               <Card
+                url="https://api.notneet.my.id"
+                title="Status"
+                description="See api status"
+              />
+              <Card
                 url="https://github.com/notneet/.github/blob/main/profile/README.md"
                 title="About Us"
                 description="Come get to know us closer!"
