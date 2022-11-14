@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Navbar from "../components/navbar";
 import { getAllPosts } from "../libs/api";
 import { PostType } from "../libs/props";
 
@@ -48,28 +48,8 @@ const Docs: NextPage<Props> = ({ allPosts }) => {
           </Head>
 
           <main className="bg-white grid dark:bg-slate-800 grid-cols-7 min-h-screen text-slate-50">
-            <nav className="h-screen text-blue-900 bg-slate-500 pt-4">
-              <Link
-                href="/"
-                className="text-3xl text-center block hover:text-blue-700 transition"
-              >
-                NotNeet
-              </Link>
-              <ul className="pt-4">
-                {allPosts.map((post, i) => (
-                  <li
-                    key={i}
-                    className="hover:bg-slate-600 transition text-center py-1"
-                  >
-                    {" "}
-                    <Link as={`/docs/${post.slug}`} href="/docs/[slug]">
-                      {post.slug}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <div className="pt-4">QWE</div>
+            <Navbar allPosts={allPosts} />
+            <div className="pt-4"></div>
           </main>
         </>
       )}

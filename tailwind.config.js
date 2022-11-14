@@ -8,22 +8,22 @@ module.exports = {
   theme: {
     extend: {
       typography: ({ theme }) => ({
-        pink: {
+        common: {
           css: {
-            "--tw-prose-body": theme("colors.pink[800]"),
-            "--tw-prose-headings": theme("colors.pink[900]"),
+            "--tw-prose-body": theme("colors.white"),
+            "--tw-prose-headings": theme("colors.white"),
             "--tw-prose-lead": theme("colors.pink[700]"),
             "--tw-prose-links": theme("colors.pink[900]"),
             "--tw-prose-bold": theme("colors.pink[900]"),
             "--tw-prose-counters": theme("colors.pink[600]"),
             "--tw-prose-bullets": theme("colors.pink[400]"),
-            "--tw-prose-hr": theme("colors.pink[300]"),
+            "--tw-prose-hr": theme("colors.blue[700]"),
             "--tw-prose-quotes": theme("colors.pink[900]"),
             "--tw-prose-quote-borders": theme("colors.pink[300]"),
             "--tw-prose-captions": theme("colors.pink[700]"),
-            "--tw-prose-code": theme("colors.pink[900]"),
-            "--tw-prose-pre-code": theme("colors.pink[100]"),
-            "--tw-prose-pre-bg": theme("colors.pink[900]"),
+            "--tw-prose-code": theme("colors.blue[400]"),
+            "--tw-prose-pre-code": theme("colors.blue[100]"),
+            "--tw-prose-pre-bg": theme("colors.blue[900]"),
             "--tw-prose-th-borders": theme("colors.pink[300]"),
             "--tw-prose-td-borders": theme("colors.pink[200]"),
             "--tw-prose-invert-body": theme("colors.pink[200]"),

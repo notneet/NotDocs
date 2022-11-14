@@ -20,4 +20,5 @@ export type PostType = {
 export type Author = {
   name: string;
   picture: string;
+  github: string;
 };

@@ -8,7 +8,7 @@ const PostBody = ({ content }: Props) => {
   return (
     <div className="mx-auto">
       <div
-        className={`${markdownStyles["markdown"]} prose prose-pink max-w-none`}
+        className={`${markdownStyles["markdown"]} prose prose-common max-w-none`}
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>

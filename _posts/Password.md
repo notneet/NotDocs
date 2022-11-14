@@ -6,6 +6,7 @@ date: "2022-11-14T03:43:41.993Z"
 author:
   name: Hanivan Rizky S
   picture: "https://avatars.githubusercontent.com/u/66857547?v=4"
+  github: "https://github.com/Hanivan"
 ogImage:
   url: "/assets/blog/hello-world/cover.jpg"
 ---
@@ -13,12 +14,22 @@ ogImage:
 This endpoint will return random string password
 
 ## Form Parameters
-| Parameter        |  Type   | Description                                            |
-| :--------------- | :-----: | :----------------------------------------------------- |
-| character_length | number  | Length of generated password (default 10, max 50 char) |
-| include_upper    | boolean | Mix password with uppercase character                  |
-| include_numbers  | boolean | Mix password with numbers                              |
-| include_symbols  | boolean | Mix password with symbols                              |
+
+``character_length`` <small>number</small>
+
+Length of generated password (default 10, max 50 char).
+
+``include_upper`` <small>boolean</small>
+
+ Mix password with uppercase character.
+
+``include_numbers`` <smal>boolean</small>
+
+Mix password with numbers.
+
+``include_symbols`` <small>boolean</small>
+
+Mix password with symbols.
 
 ## Path
 ```
